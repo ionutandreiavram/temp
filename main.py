@@ -91,7 +91,7 @@ def main():
                 'data_idx': c.cell_number,
                 'ctrl_idx': c.cell_number - 1  # Mapare empirică pt Xilinx Artix
             })
-
+    print(output_map)
     # 3. Execuție
     jtag = JTAGController(HOST, PORT)
     jtag.set_extest()
